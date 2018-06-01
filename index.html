@@ -31,7 +31,7 @@ section{background-color:#EA8D8D}
 	 padding:2px;
 	margin:2px;
 	 border-radius:2px;
-	  background:#FOF8FF;
+	  background-color:#FOF8FF;
 color:#2B3856;
   }
 
@@ -60,7 +60,7 @@ width:80%; align:center; background:#FCA5F1;
 	var item = document.getElementById("input").value;
 	var ul = document.getElementById("list");
 	var li = document.createElement("li");
-  li.appendChild(document.createTextNode("- "+item));
+  li.appendChild(document.createTextNode(item + " x "));
   ul.appendChild(li);
   document.getElementById('input').value="";
   li.onclick = removeItem;
