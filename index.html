@@ -26,10 +26,10 @@ section{background-color:#EA8D8D}
 
   li {
 	text-align: left;
-	font-size: 12px;
+	font-size: 16px;
 	list-style: none;
-	 padding:2px;
-	margin:2px;
+	 padding:5px;
+	margin:5px;
 	 border-radius:2px;
 	  background-color:#F0F8FF;
 color:#2B3856;
@@ -39,7 +39,7 @@ color:#2B3856;
 	text-decoration: line-through;
   }
 .todo-area{
-width:80%; align:center; background:#FCA5F1;
+width:80%; horizontal-align:center; background:#FCA5F1;
 	}
 </style>
 </head>
@@ -60,6 +60,9 @@ width:80%; align:center; background:#FCA5F1;
 	var item = document.getElementById("input").value;
 	var ul = document.getElementById("list");
 	var li = document.createElement("li");
+var check = document.createElement("input").setAttribute("type", "check");
+var del = document.createElement("input").setAttribute("type","button");
+li.appendChild(del);
   li.appendChild(document.createTextNode(item + " x "));
   ul.appendChild(li);
   document.getElementById('input').value="";
