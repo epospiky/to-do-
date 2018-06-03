@@ -104,7 +104,8 @@
       }
       function done(e){
               var done = document.getElementById("done");
-              var li = newItem(item);
+              var li = document.createElement("li");
+	      li.appendChild(item);
 
        done.appendChild(li);      
       }
